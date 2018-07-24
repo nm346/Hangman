@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:/Users/NathanMay/Documents/workspace/Hangman/src/images/DiffBG.png');" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DifficultyController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="100.0" layoutY="90.0" text="Choose a difficulty" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="47.0" />
+         </font>
+      </Label>
+      <HBox layoutX="50.0" layoutY="152.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="amatuer" mnemonicParsing="false" selected="true" text="Amatuer" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="semiPro" mnemonicParsing="false" text="Semi-Pro" textFill="WHITE" toggleGroup="$group">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="professional" mnemonicParsing="false" text="Professional" textFill="WHITE" toggleGroup="$group">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="worldClass" mnemonicParsing="false" text="World-Class" textFill="WHITE" toggleGroup="$group">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <Button layoutX="194.0" layoutY="244.0" mnemonicParsing="false" onAction="#diffSelected" style="-fx-background-color: #ffffff;" text="START THE GAME">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <HBox layoutX="35.0" layoutY="183.0" spacing="70.0">
+         <children>
+            <Label text="5 letters or less" textFill="WHITE" />
+            <Label text="6 letters" textFill="WHITE" />
+            <Label text="7 Letters" textFill="WHITE" />
+            <Label text="8 letters or more" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Button layoutX="272.0" layoutY="300.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="QUIT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
